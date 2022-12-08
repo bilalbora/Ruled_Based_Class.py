@@ -21,11 +21,6 @@ df.drop(['History', 'Catalogs'], axis=1, inplace=True)
 # There is any null values on dataset
 df.isnull().sum()
 
-# Age Column
-df['Age'].value_counts()
-sns.countplot(df['Age'])
-plt.show()
-
 # Create FamSize column
 print("Total categories in the feature Marital_Status:\n",
       df["Married"].value_counts(), "\n")
